@@ -1,0 +1,255 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_C_Receptacle J1
+U 1 1 5E0F2655
+P 1500 2250
+F 0 "J1" H 1607 3517 50  0000 C CNN
+F 1 "USB_C_Receptacle" H 1607 3426 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A_CircularHoles" H 1650 2250 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1650 2250 50  0001 C CNN
+	1    1500 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1750 2100 1850
+Wire Wire Line
+	2100 1950 2100 2050
+$Comp
+L Connector:Conn_01x04_Female J6
+U 1 1 5E0FADA4
+P 3100 2400
+F 0 "J6" H 3128 2376 50  0000 L CNN
+F 1 "E_Motor" H 3128 2285 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 3100 2400 50  0001 C CNN
+F 3 "~" H 3100 2400 50  0001 C CNN
+	1    3100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2250 2650 2250
+Wire Wire Line
+	2650 2250 2650 2300
+Wire Wire Line
+	2650 2300 2900 2300
+Wire Wire Line
+	2100 2350 2650 2350
+Wire Wire Line
+	2650 2350 2650 2400
+Wire Wire Line
+	2650 2400 2900 2400
+Wire Wire Line
+	2100 2550 2650 2550
+Wire Wire Line
+	2650 2550 2650 2500
+Wire Wire Line
+	2650 2500 2900 2500
+Wire Wire Line
+	2100 2650 2650 2650
+Wire Wire Line
+	2650 2650 2650 2600
+Wire Wire Line
+	2650 2600 2900 2600
+$Comp
+L Connector:Conn_01x02_Female H1
+U 1 1 5E0FFE17
+P 2700 1850
+F 0 "H1" H 2728 1826 50  0000 L CNN
+F 1 "Heater" H 2728 1735 50  0000 L CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G_1x02_P5.00mm_Vertical" H 2700 1850 50  0001 C CNN
+F 3 "~" H 2700 1850 50  0001 C CNN
+	1    2700 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1850 2300 1850
+Connection ~ 2100 1850
+Wire Wire Line
+	2500 1950 2100 1950
+Connection ~ 2100 1950
+$Comp
+L power:GND #PWR01
+U 1 1 5E100AD8
+P 2300 2000
+F 0 "#PWR01" H 2300 1750 50  0001 C CNN
+F 1 "GND" H 2305 1827 50  0000 C CNN
+F 2 "" H 2300 2000 50  0001 C CNN
+F 3 "" H 2300 2000 50  0001 C CNN
+	1    2300 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 2000 2300 1850
+Connection ~ 2300 1850
+Wire Wire Line
+	2300 1850 2100 1850
+$Comp
+L Connector:Conn_01x02_Female J4
+U 1 1 5E101F58
+P 2800 2800
+F 0 "J4" H 2828 2776 50  0000 L CNN
+F 1 "Nozzleneck_Cooling_Fan" H 2828 2685 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2800 2800 50  0001 C CNN
+F 3 "~" H 2800 2800 50  0001 C CNN
+	1    2800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J5
+U 1 1 5E1031B7
+P 3000 3000
+F 0 "J5" H 3028 2976 50  0000 L CNN
+F 1 "Object_Cooling_Fan" H 3028 2885 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 3000 3000 50  0001 C CNN
+F 3 "~" H 3000 3000 50  0001 C CNN
+	1    3000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 5E103AFA
+P 2700 1450
+F 0 "J2" H 2728 1426 50  0000 L CNN
+F 1 "Therm" H 2728 1335 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2700 1450 50  0001 C CNN
+F 3 "~" H 2700 1450 50  0001 C CNN
+	1    2700 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1450 2100 1450
+Wire Wire Line
+	2500 1550 2100 1550
+$Comp
+L Connector:Conn_01x02_Female J7
+U 1 1 5E106F51
+P 3200 3200
+F 0 "J7" H 3228 3176 50  0000 L CNN
+F 1 "LED1" H 3228 3085 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 3200 3200 50  0001 C CNN
+F 3 "~" H 3200 3200 50  0001 C CNN
+	1    3200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J3
+U 1 1 5E10D732
+P 2700 3400
+F 0 "J3" H 2728 3426 50  0000 L CNN
+F 1 "Z_End_Sensor" H 2728 3335 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 2700 3400 50  0001 C CNN
+F 3 "~" H 2700 3400 50  0001 C CNN
+	1    2700 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2800 2300 2800
+Wire Wire Line
+	2300 2800 2300 2850
+Wire Wire Line
+	2300 2850 2100 2850
+Wire Wire Line
+	2100 2950 2250 2950
+Wire Wire Line
+	2250 2950 2250 3000
+Wire Wire Line
+	2250 3000 2800 3000
+Wire Wire Line
+	2100 3150 2800 3150
+Wire Wire Line
+	2800 3150 2800 3200
+Wire Wire Line
+	2800 3200 3000 3200
+Wire Wire Line
+	2800 3100 2300 3100
+Wire Wire Line
+	2100 3250 2100 3300
+Wire Wire Line
+	2100 3300 2500 3300
+Wire Wire Line
+	2100 3450 2300 3450
+Wire Wire Line
+	2300 3450 2300 3400
+Wire Wire Line
+	2300 3400 2500 3400
+Wire Wire Line
+	2100 3550 2350 3550
+Wire Wire Line
+	2350 3550 2350 3500
+Wire Wire Line
+	2350 3500 2500 3500
+$Comp
+L power:GND #PWR02
+U 1 1 5E114569
+P 2300 3100
+F 0 "#PWR02" H 2300 2850 50  0001 C CNN
+F 1 "GND" H 2305 2927 50  0000 C CNN
+F 2 "" H 2300 3100 50  0001 C CNN
+F 3 "" H 2300 3100 50  0001 C CNN
+	1    2300 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5E114DAC
+P 2450 2900
+F 0 "#PWR03" H 2450 2650 50  0001 C CNN
+F 1 "GND" H 2455 2727 50  0000 C CNN
+F 2 "" H 2450 2900 50  0001 C CNN
+F 3 "" H 2450 2900 50  0001 C CNN
+	1    2450 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2900 2450 2900
+$Comp
+L power:GND #PWR04
+U 1 1 5E116681
+P 2950 3900
+F 0 "#PWR04" H 2950 3650 50  0001 C CNN
+F 1 "GND" H 2955 3727 50  0000 C CNN
+F 2 "" H 2950 3900 50  0001 C CNN
+F 3 "" H 2950 3900 50  0001 C CNN
+	1    2950 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3300 2950 3300
+$Comp
+L Connector:Conn_01x02_Female J8
+U 1 1 5E119007
+P 3350 3600
+F 0 "J8" H 3378 3576 50  0000 L CNN
+F 1 "LED2" H 3378 3485 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 3350 3600 50  0001 C CNN
+F 3 "~" H 3350 3600 50  0001 C CNN
+	1    3350 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3300 2950 3700
+Wire Wire Line
+	3150 3700 2950 3700
+Connection ~ 2950 3700
+Wire Wire Line
+	2950 3700 2950 3900
+Wire Wire Line
+	3150 3600 2200 3600
+Wire Wire Line
+	2200 3600 2200 1250
+Wire Wire Line
+	2200 1250 2100 1250
+$EndSCHEMATC
